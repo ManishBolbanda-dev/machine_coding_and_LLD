@@ -1,0 +1,62 @@
+package models;
+
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
+public class Board {
+	int end;
+	private Queue<Player> players;
+	private List<Mover> snakes;
+	private List<Mover> ladders;
+	
+	Board(int end){
+		this.end = end;
+		this.players = new ArrayDeque<>();
+		this.snakes = new ArrayList<>();
+		this.ladders = new ArrayList<>();
+	}
+	void addPlayer(Player player){
+		players.add(player);
+	}
+	void addSnake(Mover mover) {
+		this.snakes.add(mover);
+	}
+	void addLadder(Mover mover) {
+		this.ladders.add(mover);
+	}
+	
+	
+	public int getEnd() {
+		return end;
+	}
+	public void setEnd(int end) {
+		this.end = end;
+	}
+	public Queue<Player> getPlayers() {
+		return players;
+	}
+	public void setPlayers(Queue<Player> players) {
+		this.players = players;
+	}
+	public List<Mover> getSnakes() {
+		return snakes;
+	}
+	public void setSnakes(List<Mover> snakes) {
+		this.snakes = snakes;
+	}
+	public List<Mover> getLadders() {
+		return ladders;
+	}
+	public void setLadders(List<Mover> ladders) {
+		this.ladders = ladders;
+	}
+	public Player getCurrentPlayer() {
+		return this.players.peek();
+	}
+	
+	
+	
+
+}

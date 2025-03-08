@@ -1,0 +1,52 @@
+package runner;
+
+import java.util.List;
+import java.util.Scanner;
+
+import models.Board;
+import models.Dice;
+import models.Mover;
+import models.Player;
+import service.BoardService;
+
+public class SnakeLadderRunner {
+	public static void main(String[] args) {
+		System.out.println("hello, snake ladder");
+		Scanner scn = new Scanner(System.in);
+		
+		// take input from command
+		
+		// temp input
+		int n = 10;
+		int boardSize = n*n;
+		Board board = new Board(boardSize);
+		
+		int numSnakes = 3;
+		board.addSnake(new Mover(32, 5));
+		board.addSnake(new Mover(45, 14));
+		board.addSnake(new Mover(84, 32));
+		
+		int numLadders = 5;
+		board.addLadder(new Mover(6, 31));
+		board.addLadder(new Mover(29, 43));
+		board.addLadder(new Mover(36, 57));
+		board.addLadder(new Mover(67, 87));
+		board.addLadder(new Mover(54, 92));
+		
+		int numPlayers = 4;
+		board.addPlayer(new Player(1, "Rohan"));
+		board.addPlayer(new Player(2, "Varun"));
+		board.addPlayer(new Player(1, "Suresh"));
+		board.addPlayer(new Player(2, "Ajit"));
+		// functional req:
+		
+		int numOfDice = 1;
+		board.setDice(new Dice(numOfDice, 6));
+		
+		BoardService boardService = new BoardService(board);
+		List<Player> winners = boardService.startGame();
+		System.out.println("Final Winners are: "+winners);
+		//
+
+	}
+}

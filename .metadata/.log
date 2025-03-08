@@ -1,0 +1,401 @@
+!SESSION 2025-03-09 00:21:44.145 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.linuxtools.docker.core 4 0 2025-03-09 00:21:52.228
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.docker.core [991]
+  Unresolved requirement: Require-Bundle: com.github.jnr.unixsocket; bundle-version="0.28.0"
+    -> Bundle-SymbolicName: com.github.jnr.unixsocket; bundle-version="0.38.22"
+       com.github.jnr.unixsocket [939]
+         Unresolved requirement: Import-Package: jnr.posix; version="[3.1.0,4.0.0)"
+           -> Export-Package: jnr.posix; bundle-symbolic-name="com.github.jnr.posix"; bundle-version="3.1.19"; version="3.1.19"
+              com.github.jnr.posix [938]
+                Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                     com.github.jnr.ffi [936]
+                       Unresolved requirement: Import-Package: jnr.a64asm
+                         -> Export-Package: jnr.a64asm; bundle-symbolic-name="com.github.jnr.a64asm"; bundle-version="1.0.0.v20230715-0746"; version="1.0.0"
+                            com.github.jnr.a64asm [933]
+                              No resolution report for the bundle.                       Unresolved requirement: Import-Package: jnr.x86asm
+                         -> Export-Package: jnr.x86asm; bundle-symbolic-name="com.github.jnr.x86asm"; bundle-version="1.0.2.v20230715-0746"; version="1.0.2"
+                            com.github.jnr.x86asm [940]
+                              No resolution report for the bundle.                       Unresolved requirement: Import-Package: com.kenai.jffi
+                         -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+                            com.github.jnr.jffi [937]
+                              No resolution report for the bundle.                Unresolved requirement: Import-Package: jnr.ffi.byref; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.byref; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.constants; version="[0.10.0,1.0.0)"
+                  -> Export-Package: jnr.constants; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                     com.github.jnr.constants [934]
+                       No resolution report for the bundle.                Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.provider; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.constants.platform.windows; version="[0.10.0,1.0.0)"
+                  -> Export-Package: jnr.constants.platform.windows; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+                  -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+           -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+         Unresolved requirement: Import-Package: com.kenai.jffi
+           -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+         Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.ffi.provider.converters; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.provider.converters; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.ffi.provider.jffi; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.provider.jffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.ffi.byref; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi.byref; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Import-Package: jnr.enxio.channels; version="[0.32.0,1.0.0)"
+           -> Export-Package: jnr.enxio.channels; bundle-symbolic-name="com.github.jnr.enxio"; bundle-version="0.32.17"; version="0.32.17"
+              com.github.jnr.enxio [935]
+                Unresolved requirement: Import-Package: jnr.ffi.provider.jffi; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider.jffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.provider.converters; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider.converters; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+                  -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.provider; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: com.kenai.jffi
+                  -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+         Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+           -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+  Unresolved requirement: Require-Bundle: org.mandas.docker-client; bundle-version="3.2.1"
+    -> Bundle-SymbolicName: org.mandas.docker-client; bundle-version="8.0.2"
+       org.mandas.docker-client [1028]
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.jakarta.rs.json; version="[2.17.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.google.auth.oauth2; resolution:="optional"
+         Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector; version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jboss.resteasy.client.jaxrs; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jboss.resteasy.client.jaxrs.engines; resolution:="optional"
+         Unresolved requirement: Import-Package: org.glassfish.jersey.jackson; version="[3.1.0,4.0.0)"; resolution:="optional"
+           -> Export-Package: org.glassfish.jersey.jackson; bundle-symbolic-name="org.glassfish.jersey.media.jersey-media-json-jackson"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs.core,org.glassfish.jersey.internal.l10n"
+              org.glassfish.jersey.media.jersey-media-json-jackson [1023]
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.module.jaxb; version="[2.17.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.module.jakarta.xmlbind; version="[2.17.0,3.0.0)"
+                  -> Export-Package: com.fasterxml.jackson.module.jakarta.xmlbind; bundle-symbolic-name="com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations"; bundle-version="2.17.2"; version="2.17.2"; uses:="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,jakarta.xml.bind.annotation,jakarta.xml.bind.annotation.adapters"
+                     com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations [932]
+                Unresolved requirement: Import-Package: org.glassfish.jersey.message.filtering.spi; version="[3.1.0,4.0.0)"
+                  -> Export-Package: org.glassfish.jersey.message.filtering.spi; bundle-symbolic-name="org.glassfish.jersey.ext.jersey-entity-filtering"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs.core,org.glassfish.jersey.spi"
+                     org.glassfish.jersey.ext.jersey-entity-filtering [1021]
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.server.model; version="[3.1.0,4.0.0)"
+                         -> Export-Package: org.glassfish.jersey.server.model; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs,jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.message,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,org.glassfish.jersey.model.internal.spi,org.glassfish.jersey.process,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.spi,org.glassfish.jersey.uri"
+                            org.glassfish.jersey.core.jersey-server [1019]
+                              Unresolved requirement: Import-Package: jakarta.validation; version="[3.0.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.xml.namespace; resolution:="optional"
+                                -> Export-Package: javax.xml.namespace; bundle-symbolic-name="javax.xml.stream"; bundle-version="1.0.1.v201004272200"; version="1.0.1"
+                                   javax.xml.stream [44]
+                                     No resolution report for the bundle.                              Unresolved requirement: Import-Package: org.glassfish.jersey.client; version="[3.1.0,4.0.0)"
+                                -> Export-Package: org.glassfish.jersey.client; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.client.inject,org.glassfish.jersey.client.spi,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.spi"
+                                   org.glassfish.jersey.core.jersey-client [1015]
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.server; version="[3.1.0,4.0.0)"
+                         -> Export-Package: org.glassfish.jersey.server; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri"
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.server.filter; version="[3.1.0,4.0.0)"
+                         -> Export-Package: org.glassfish.jersey.server.filter; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.annotation,jakarta.ws.rs.container,jakarta.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.spi"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.message.filtering; version="[3.1.0,4.0.0)"
+                  -> Export-Package: org.glassfish.jersey.message.filtering; bundle-symbolic-name="org.glassfish.jersey.ext.jersey-entity-filtering"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.annotation,jakarta.annotation.security,jakarta.inject,jakarta.ws.rs.core,org.glassfish.jersey.message.filtering.spi"
+         Unresolved requirement: Import-Package: jnr.unixsocket; version="[0.38.0,1.0.0)"
+           -> Export-Package: jnr.unixsocket; bundle-symbolic-name="com.github.jnr.unixsocket"; bundle-version="0.38.22"; version="0.38.22"
+         Unresolved requirement: Import-Package: org.glassfish.jersey.client.spi; version="[3.1.0,4.0.0)"; resolution:="optional"
+           -> Export-Package: org.glassfish.jersey.client.spi; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,javax.net.ssl,org.glassfish.jersey.client,org.glassfish.jersey.process,org.glassfish.jersey.spi"
+         Unresolved requirement: Import-Package: org.glassfish.jersey.client; version="[3.1.0,4.0.0)"; resolution:="optional"
+           -> Export-Package: org.glassfish.jersey.client; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.client.inject,org.glassfish.jersey.client.spi,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.spi"
+  Unresolved requirement: Require-Bundle: org.glassfish.jersey.inject.jersey-hk2; bundle-version="2.3.0.1"
+    -> Bundle-SymbolicName: org.glassfish.jersey.inject.jersey-hk2; bundle-version="3.1.8"
+       org.glassfish.jersey.inject.jersey-hk2 [1022]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: com.github.jnr.enxio; bundle-version="0.25.0"
+    -> Bundle-SymbolicName: com.github.jnr.enxio; bundle-version="0.32.17"
+  Unresolved requirement: Require-Bundle: org.glassfish.jersey.core.jersey-client; bundle-version="2.30.1"
+    -> Bundle-SymbolicName: org.glassfish.jersey.core.jersey-client; bundle-version="3.1.8"
+  Unresolved requirement: Require-Bundle: org.glassfish.jersey.media.jersey-media-json-jackson; bundle-version="2.30.1"
+    -> Bundle-SymbolicName: org.glassfish.jersey.media.jersey-media-json-jackson; bundle-version="3.1.8"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.linuxtools.docker.core [osgi.identity; type="osgi.bundle"; version:Version="5.10.0.202303072327"; osgi.identity="org.eclipse.linuxtools.docker.core"; singleton:="true"] because it is exposed to package 'org.glassfish.jersey' from resources org.glassfish.jersey.core.jersey-common [osgi.identity; type="osgi.bundle"; version:Version="3.1.8"; osgi.identity="org.glassfish.jersey.core.jersey-common"] and org.glassfish.jersey.core.jersey-common [osgi.identity; type="osgi.bundle"; version:Version="2.30.1.v20221112-0806"; osgi.identity="org.glassfish.jersey.core.jersey-common"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.linuxtools.docker.core [osgi.identity; type="osgi.bundle"; version:Version="5.10.0.202303072327"; osgi.identity="org.eclipse.linuxtools.docker.core"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.glassfish.jersey.core.jersey-common)(bundle-version>=2.30.1))
+     |
+    provide: osgi.wiring.bundle: org.glassfish.jersey.core.jersey-common
+  org.glassfish.jersey.core.jersey-common [osgi.identity; type="osgi.bundle"; version:Version="3.1.8"; osgi.identity="org.glassfish.jersey.core.jersey-common"]
+
+Chain 2:
+  org.eclipse.linuxtools.docker.core [osgi.identity; type="osgi.bundle"; version:Version="5.10.0.202303072327"; osgi.identity="org.eclipse.linuxtools.docker.core"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.glassfish.jersey.core.jersey-client)(bundle-version>=2.30.1))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.30.1.v20221112-0806"; osgi.wiring.bundle="org.glassfish.jersey.core.jersey-client"
+  org.glassfish.jersey.core.jersey-client [osgi.identity; type="osgi.bundle"; version:Version="2.30.1.v20221112-0806"; osgi.identity="org.glassfish.jersey.core.jersey-client"]
+    import: (&(osgi.wiring.package=org.glassfish.jersey)(&(version>=2.30.1)(!(version>=3.0.0))))
+     |
+    export: osgi.wiring.package: org.glassfish.jersey
+  org.glassfish.jersey.core.jersey-common [osgi.identity; type="osgi.bundle"; version:Version="2.30.1.v20221112-0806"; osgi.identity="org.glassfish.jersey.core.jersey-common"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.docker.ui 4 0 2025-03-09 00:21:52.236
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.docker.ui [992]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="5.10.0.202303072327"; singleton:="true"
+       org.eclipse.linuxtools.docker.core [991]
+         Unresolved requirement: Require-Bundle: com.github.jnr.unixsocket; bundle-version="0.28.0"
+           -> Bundle-SymbolicName: com.github.jnr.unixsocket; bundle-version="0.38.22"
+              com.github.jnr.unixsocket [939]
+                Unresolved requirement: Import-Package: jnr.posix; version="[3.1.0,4.0.0)"
+                  -> Export-Package: jnr.posix; bundle-symbolic-name="com.github.jnr.posix"; bundle-version="3.1.19"; version="3.1.19"
+                     com.github.jnr.posix [938]
+                       Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                            com.github.jnr.ffi [936]
+                              Unresolved requirement: Import-Package: jnr.a64asm
+                                -> Export-Package: jnr.a64asm; bundle-symbolic-name="com.github.jnr.a64asm"; bundle-version="1.0.0.v20230715-0746"; version="1.0.0"
+                                   com.github.jnr.a64asm [933]
+                                     No resolution report for the bundle.                              Unresolved requirement: Import-Package: jnr.x86asm
+                                -> Export-Package: jnr.x86asm; bundle-symbolic-name="com.github.jnr.x86asm"; bundle-version="1.0.2.v20230715-0746"; version="1.0.2"
+                                   com.github.jnr.x86asm [940]
+                                     No resolution report for the bundle.                              Unresolved requirement: Import-Package: com.kenai.jffi
+                                -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+                                   com.github.jnr.jffi [937]
+                                     No resolution report for the bundle.                       Unresolved requirement: Import-Package: jnr.ffi.byref; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.byref; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.constants; version="[0.10.0,1.0.0)"
+                         -> Export-Package: jnr.constants; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                            com.github.jnr.constants [934]
+                              No resolution report for the bundle.                       Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.provider; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.provider; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.constants.platform.windows; version="[0.10.0,1.0.0)"
+                         -> Export-Package: jnr.constants.platform.windows; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                       Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+                         -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                       Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+                  -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                Unresolved requirement: Import-Package: com.kenai.jffi
+                  -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+                Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.provider.converters; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider.converters; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.provider.jffi; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.provider.jffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.ffi.byref; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi.byref; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                Unresolved requirement: Import-Package: jnr.enxio.channels; version="[0.32.0,1.0.0)"
+                  -> Export-Package: jnr.enxio.channels; bundle-symbolic-name="com.github.jnr.enxio"; bundle-version="0.32.17"; version="0.32.17"
+                     com.github.jnr.enxio [935]
+                       Unresolved requirement: Import-Package: jnr.ffi.provider.jffi; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.provider.jffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.types; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.types; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.provider.converters; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.provider.converters; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.constants.platform; version="[0.10.0,1.0.0)"
+                         -> Export-Package: jnr.constants.platform; bundle-symbolic-name="com.github.jnr.constants"; bundle-version="0.10.4"; version="0.10.4"
+                       Unresolved requirement: Import-Package: jnr.ffi.annotations; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.annotations; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.provider; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.provider; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: jnr.ffi.mapper; version="[2.2.0,3.0.0)"
+                         -> Export-Package: jnr.ffi.mapper; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+                       Unresolved requirement: Import-Package: com.kenai.jffi
+                         -> Export-Package: com.kenai.jffi; bundle-symbolic-name="com.github.jnr.jffi"; bundle-version="1.3.13"; version="1.3.13"
+                Unresolved requirement: Import-Package: jnr.ffi; version="[2.2.0,3.0.0)"
+                  -> Export-Package: jnr.ffi; bundle-symbolic-name="com.github.jnr.ffi"; bundle-version="2.2.16"; version="2.2.16"
+         Unresolved requirement: Require-Bundle: org.mandas.docker-client; bundle-version="3.2.1"
+           -> Bundle-SymbolicName: org.mandas.docker-client; bundle-version="8.0.2"
+              org.mandas.docker-client [1028]
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.jakarta.rs.json; version="[2.17.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.google.auth.oauth2; resolution:="optional"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector; version="[3.1.0,4.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jboss.resteasy.client.jaxrs; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jboss.resteasy.client.jaxrs.engines; resolution:="optional"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.jackson; version="[3.1.0,4.0.0)"; resolution:="optional"
+                  -> Export-Package: org.glassfish.jersey.jackson; bundle-symbolic-name="org.glassfish.jersey.media.jersey-media-json-jackson"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs.core,org.glassfish.jersey.internal.l10n"
+                     org.glassfish.jersey.media.jersey-media-json-jackson [1023]
+                       Unresolved requirement: Import-Package: com.fasterxml.jackson.module.jaxb; version="[2.17.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.fasterxml.jackson.module.jakarta.xmlbind; version="[2.17.0,3.0.0)"
+                         -> Export-Package: com.fasterxml.jackson.module.jakarta.xmlbind; bundle-symbolic-name="com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations"; bundle-version="2.17.2"; version="2.17.2"; uses:="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,jakarta.xml.bind.annotation,jakarta.xml.bind.annotation.adapters"
+                            com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations [932]
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.message.filtering.spi; version="[3.1.0,4.0.0)"
+                         -> Export-Package: org.glassfish.jersey.message.filtering.spi; bundle-symbolic-name="org.glassfish.jersey.ext.jersey-entity-filtering"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs.core,org.glassfish.jersey.spi"
+                            org.glassfish.jersey.ext.jersey-entity-filtering [1021]
+                              Unresolved requirement: Import-Package: org.glassfish.jersey.server.model; version="[3.1.0,4.0.0)"
+                                -> Export-Package: org.glassfish.jersey.server.model; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs,jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.message,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,org.glassfish.jersey.model.internal.spi,org.glassfish.jersey.process,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.spi,org.glassfish.jersey.uri"
+                                   org.glassfish.jersey.core.jersey-server [1019]
+                                     Unresolved requirement: Import-Package: jakarta.validation; version="[3.0.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.xml.namespace; resolution:="optional"
+                                       -> Export-Package: javax.xml.namespace; bundle-symbolic-name="javax.xml.stream"; bundle-version="1.0.1.v201004272200"; version="1.0.1"
+                                          javax.xml.stream [44]
+                                            No resolution report for the bundle.                                     Unresolved requirement: Import-Package: org.glassfish.jersey.client; version="[3.1.0,4.0.0)"
+                                       -> Export-Package: org.glassfish.jersey.client; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.client.inject,org.glassfish.jersey.client.spi,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.spi"
+                                          org.glassfish.jersey.core.jersey-client [1015]
+                              Unresolved requirement: Import-Package: org.glassfish.jersey.server; version="[3.1.0,4.0.0)"
+                                -> Export-Package: org.glassfish.jersey.server; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri"
+                              Unresolved requirement: Import-Package: org.glassfish.jersey.server.filter; version="[3.1.0,4.0.0)"
+                                -> Export-Package: org.glassfish.jersey.server.filter; bundle-symbolic-name="org.glassfish.jersey.core.jersey-server"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.annotation,jakarta.ws.rs.container,jakarta.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.spi"
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.message.filtering; version="[3.1.0,4.0.0)"
+                         -> Export-Package: org.glassfish.jersey.message.filtering; bundle-symbolic-name="org.glassfish.jersey.ext.jersey-entity-filtering"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.annotation,jakarta.annotation.security,jakarta.inject,jakarta.ws.rs.core,org.glassfish.jersey.message.filtering.spi"
+                Unresolved requirement: Import-Package: jnr.unixsocket; version="[0.38.0,1.0.0)"
+                  -> Export-Package: jnr.unixsocket; bundle-symbolic-name="com.github.jnr.unixsocket"; bundle-version="0.38.22"; version="0.38.22"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.client.spi; version="[3.1.0,4.0.0)"; resolution:="optional"
+                  -> Export-Package: org.glassfish.jersey.client.spi; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,javax.net.ssl,org.glassfish.jersey.client,org.glassfish.jersey.process,org.glassfish.jersey.spi"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.client; version="[3.1.0,4.0.0)"; resolution:="optional"
+                  -> Export-Package: org.glassfish.jersey.client; bundle-symbolic-name="org.glassfish.jersey.core.jersey-client"; bundle-version="3.1.8"; version="3.1.8"; uses:="jakarta.inject,jakarta.ws.rs,jakarta.ws.rs.client,jakarta.ws.rs.core,jakarta.ws.rs.ext,javax.net.ssl,org.glassfish.jersey,org.glassfish.jersey.client.inject,org.glassfish.jersey.client.spi,org.glassfish.jersey.http,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.spi"
+         Unresolved requirement: Require-Bundle: org.glassfish.jersey.inject.jersey-hk2; bundle-version="2.3.0.1"
+           -> Bundle-SymbolicName: org.glassfish.jersey.inject.jersey-hk2; bundle-version="3.1.8"
+              org.glassfish.jersey.inject.jersey-hk2 [1022]
+                No resolution report for the bundle.         Unresolved requirement: Require-Bundle: com.github.jnr.enxio; bundle-version="0.25.0"
+           -> Bundle-SymbolicName: com.github.jnr.enxio; bundle-version="0.32.17"
+         Unresolved requirement: Require-Bundle: org.glassfish.jersey.core.jersey-client; bundle-version="2.30.1"
+           -> Bundle-SymbolicName: org.glassfish.jersey.core.jersey-client; bundle-version="3.1.8"
+         Unresolved requirement: Require-Bundle: org.glassfish.jersey.media.jersey-media-json-jackson; bundle-version="2.30.1"
+           -> Bundle-SymbolicName: org.glassfish.jersey.media.jersey-media-json-jackson; bundle-version="3.1.8"
+  Unresolved requirement: Require-Bundle: org.mandas.docker-client; bundle-version="7.0.7"
+    -> Bundle-SymbolicName: org.mandas.docker-client; bundle-version="8.0.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.app 0 0 2025-03-09 00:21:53.418
+!MESSAGE Product org.eclipse.epp.package.jee.product could not be found.
+
+!ENTRY org.eclipse.ui 2 0 2025-03-09 00:22:41.755
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-09 00:22:41.755
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-09 00:23:24.511
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-09 00:23:24.511
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.jface 2 0 2025-03-09 00:23:28.439
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-03-09 00:23:28.439
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-09 00:23:34.573
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\manis'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2025-03-09 00:24:01.715
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\manis\eclipse\jee-2023-03\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 00:25:24.193
+!MESSAGE Classpath changed for project: SnakeLadder
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-09 00:25:42.371
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\manis\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/manis/eclipse-workspace/machine-coding-practice/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1741460142367
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\manis\eclipse\jee-2023-03\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 00:25:42.373
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-09 00:25:42.383
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 43956
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-09 01:34:49.645
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-09 01:38:51.585
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

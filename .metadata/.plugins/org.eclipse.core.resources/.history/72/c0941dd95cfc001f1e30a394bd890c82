@@ -1,0 +1,37 @@
+package service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import models.Board;
+import models.Player;
+
+public class BoardService {
+	
+	Map<Integer, Integer> movePositions;
+	private Board board;
+	
+	
+	public BoardService(Board board) {
+		this.board = board;
+		this.movePositions = new HashMap<>();
+	}
+	
+	void loadSnakesAndLadders(){
+		this.board.getSnakes().forEach(s  -> movePositions.put(s.getFrom(), s.getTo()));
+		this.board.getLadders().forEach(lad  -> movePositions.put(lad.getFrom(), lad.getTo()));
+	}
+	void shufflePlayer() {
+		// shuffle players
+	}
+	List<Player> startGame(){
+		List<Player> winners = new ArrayList<>();
+		
+		while(this.board.getPlayers().size()>1) {
+			Player cp = this.board.getCurrentPlayer();
+		}
+		return winners;
+	}
+}

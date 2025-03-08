@@ -1,0 +1,14 @@
+package runner;
+
+import java.util.Scanner;
+
+public class SnakeLadderRunner {
+	public static void main(String[] args) {
+		System.out.println("hello, snake ladder");
+		Scanner scn = new Scanner(System.in);
+		// take input
+
+		// functional req:
+
+	}
+}

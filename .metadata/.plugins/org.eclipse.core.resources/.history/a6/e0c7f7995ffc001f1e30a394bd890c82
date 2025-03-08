@@ -1,0 +1,32 @@
+package runner;
+
+import java.util.Scanner;
+
+import models.Board;
+import service.BoardService;
+
+public class SnakeLadderRunner {
+	public static void main(String[] args) {
+		System.out.println("hello, snake ladder");
+		Scanner scn = new Scanner(System.in);
+		
+		// take input from command
+		
+		// temp input
+		int n = 10;
+		int boardSize = n*n;
+		Board board = new Board(boardSize);
+		
+		int numSnakes = 3;
+		board.addSnake(new Mover(32, 5));
+		int numLadders = 5;
+		
+		
+		// functional req:
+		
+		BoardService boardService = new BoardService(board);
+		boardService.startGame();
+		//
+
+	}
+}

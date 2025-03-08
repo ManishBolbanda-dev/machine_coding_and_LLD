@@ -1,0 +1,7 @@
+package runner;
+
+public class SnakeLadderRunner {
+	public static void main(String[] args) {
+		System.out.println("hello, snake ladder");
+	}
+}

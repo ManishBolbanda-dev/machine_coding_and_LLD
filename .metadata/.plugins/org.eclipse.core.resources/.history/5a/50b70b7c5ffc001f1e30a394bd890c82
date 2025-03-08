@@ -1,0 +1,22 @@
+package runner;
+
+import java.util.Scanner;
+
+import models.Board;
+import service.BoardService;
+
+public class SnakeLadderRunner {
+	public static void main(String[] args) {
+		System.out.println("hello, snake ladder");
+		Scanner scn = new Scanner(System.in);
+		Board board ;
+		// take input
+		
+		// functional req:
+		
+		BoardService boardService = new BoardService(board);
+		boardService.sta
+		//
+
+	}
+}
