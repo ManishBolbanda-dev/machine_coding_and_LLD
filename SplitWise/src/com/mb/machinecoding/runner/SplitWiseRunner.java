@@ -33,7 +33,7 @@ public class SplitWiseRunner {
 		idx=1;
 //		expenseService.addExpense(new Expense(1, "restro", "", 1, new Amount(Currency.USD, 2000), 2, List.of(u1, u2, u3, u4)));
 		
-		// add expense from termial - take input and Build AddExpenseRequest
+		// todo add expense from termial - take input and Build AddExpenseRequest
 		
 		AddExpenseRequest addExpenseRequest = new AddExpenseRequest(2, 2000d, List.of(u1,  u2, u3, u4), ExpenseSplitType.EQUAL , null, group_id);
 		Expense expense1 = expenseService.addExpense(addExpenseRequest);
@@ -51,7 +51,11 @@ public class SplitWiseRunner {
 			}
 		}
 		
-//		this
+//		Hey Arnab, can you discuss about this optimization
+		
+//		balanceGraph is not optimized. example: a -> b(50) b->c,30, b->d,100 c->a30 this can we resolved as a -> b,20 and b->d,100; i.e 4 transaction to 2.
+//		Approach i can think of: if a owes b then a will check all people whom b owes in this case c and d. so a will check is there any one among list of people b owes(c,d) owes a in this case c. so it will settle up with them.
+		
 		
 		
 	}

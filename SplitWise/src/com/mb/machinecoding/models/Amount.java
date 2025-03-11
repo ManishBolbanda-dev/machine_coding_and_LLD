@@ -1,5 +1,8 @@
 package com.mb.machinecoding.models;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Amount {
 	private Currency currency;
 	private Double amountValue;
@@ -7,11 +10,7 @@ public class Amount {
 		this.currency = Currency.USD;
 		this.amountValue = 0d;
 	}
-	public Amount(Currency currency, Double amountValue) {
-		super();
-		this.currency = currency;
-		this.amountValue = amountValue;
-	}
+	
 	public Currency getCurrency() {
 		return currency;
 	}
